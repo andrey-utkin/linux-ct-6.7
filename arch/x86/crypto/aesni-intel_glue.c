@@ -1599,7 +1599,7 @@ static struct aead_alg aesni_ccm_aead = {
 	.base.cra_driver_name	= "ccm-aesni",
 	.base.cra_priority	= 400,
 	.base.cra_blocksize	= 1,
-	.base.cra_ctxsize	= sizeof(struct crypto_aes_ctx),
+	.base.cra_ctxsize	= CRYPTO_AES_CTX_SIZE,
 	.base.cra_module	= THIS_MODULE,
 
 	.setkey			= aesni_ccm_setkey,
